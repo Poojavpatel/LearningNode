@@ -1,3 +1,3 @@
-const log = require('./logger.js');
+const logger = require('./logger.js');
 
-log("Yay your first module works and s is ");
+logger.log("Yay your first module works and s is " + logger.s);
