@@ -1,8 +1,14 @@
-var s=998;
+/*jshint esversion: 6 */
+const EventEmmiter = require('events');
 
-function log(message){
-    console.log(message);
+class Logger extends EventEmmiter{
+    //var s=998;
+
+    this.emit('messageLogged',{message:"An message logging event took place"});
+
+    log(message){
+        console.log(message);
+    }
 }
 
-module.exports.log = log ;
-module.exports.s = s ;
+module.exports = Logger;
