@@ -1,5 +1,3 @@
-function log(message){
-    console.log(message);
-}
+const logger = require('./logger.js');
 
-log("pooja you rock");
+logger.log("Yay your first module works and s is "+ logger.s);
